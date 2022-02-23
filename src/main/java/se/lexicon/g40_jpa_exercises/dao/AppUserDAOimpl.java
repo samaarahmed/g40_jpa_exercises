@@ -44,7 +44,6 @@ public class AppUserDAOimpl implements AppUserDAO {
     @Override
     @Transactional
     public boolean delete(AppUser appuser) {
-
         if (appuser.getUserId()>0) {
             entityManager.remove(appuser);
             return true;
